@@ -35,6 +35,10 @@ pipenv run python hostprobe.py [OPTIONS]
 ## Example
 Perform host discovery using a host list file named `hostlist.txt`, save the results to `output.txt`, enable verbose (real-time) output, and add a 1-second sleep interval between probes:
 
+```bash
+pipenv run python hostprobe.py -f hostlist.txt -o output.txt -v -s 1.0
+```
+
 ## Dependencies
 - [ping3](https://pypi.org/project/ping3/): Python 3 ICMP ping implementation.
 - [colorama](https://pypi.org/project/colorama/): Library for colored text output.
